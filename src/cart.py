@@ -1,6 +1,7 @@
 class EmptyCartError(Exception):
     pass
 
+
 class Cart:
     def __init__(self):
         self.items = []  # 장바구니에 담긴 상품들을 저장할 빈 리스트 초기화

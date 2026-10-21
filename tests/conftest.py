@@ -2,7 +2,7 @@ import pytest
 from src.cart import Cart
 
 
-@pytest.fixture
+@pytest.fixture(scope="function") 
 def cart():
     print("\n\t\t[준비] 새 장바구니")
     c = Cart()
